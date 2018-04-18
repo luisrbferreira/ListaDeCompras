@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/lblNomeProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do produto: "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#787777"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewNomeProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblNomeProduto" />
+
+        <TextView
+            android:id="@+id/lblCodigoDeBarras"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Código de Barras: "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#787777"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNomeProduto" />
+
+        <TextView
+            android:id="@+id/textViewCodigoBarras"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="000000000001"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCodigoDeBarras" />
+
+        <TextView
+            android:id="@+id/lblQuantidade"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="5dp"
+            android:text="Quantidade:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#787777"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCodigoBarras" />
+
+        <TextView
+            android:id="@+id/textViewQuantidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/lblQuantidade"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCodigoBarras" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuantidade" />
+
+        <TextView
+            android:id="@+id/lblPrecoUnitario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Preço unitário: R$"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#787777"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewQuantidade"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCodigoBarras" />
+
+        <TextView
+            android:id="@+id/textViewPrecoUnitario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="5,00"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/lblPrecoUnitario"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCodigoBarras" />
+
+        <TextView
+            android:id="@+id/lblPrecoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Preço total: R$"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#787777"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textViewPrecoTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="5,00"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblPrecoTotal"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

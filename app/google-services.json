@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "564076997563",
+    "firebase_url": "https://lista-de-compras-a5b6d.firebaseio.com",
+    "project_id": "lista-de-compras-a5b6d",
+    "storage_bucket": "lista-de-compras-a5b6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564076997563:android:4e0bb1dfe5240017",
+        "android_client_info": {
+          "package_name": "br.com.luisferreira.listadecompras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564076997563-hlscasdilq48r386hjp3as1g605euj31.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.luisferreira.listadecompras",
+            "certificate_hash": "24a477186fc75d3e6b73d2b934c25882cdea1347"
+          }
+        },
+        {
+          "client_id": "564076997563-1tqn0ieoauilh2ahjf59cfsd1448g6pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7j0BMiaUJdLN6xFpKupcxvOUTCiAlbVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564076997563-1tqn0ieoauilh2ahjf59cfsd1448g6pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

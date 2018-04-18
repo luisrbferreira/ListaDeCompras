@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lista De Compras</string>
+
+    <!-- Erros -->
+    <string name="msg_erro_nome_empty">O campo nome é obrigatório</string>
+    <string name="msg_erro_codigoDeBarras_empty">O campo codigo é obrigatório</string>
+    <string name="msg_erro_quantidade_empty">O campo quantidade é obrigatório</string>
+    <string name="msg_erro_precoUnitario_empty">O campo preço unitário é obrigatório</string>
+</resources>
